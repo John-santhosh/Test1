@@ -570,7 +570,7 @@ document.write("</p>")
 
 //<=-=-=-> 6. Filter the elements with height = 600 and width = 400<=-=-=->
 
-let measures = superMarket.filter(a=>a.height==600 && a.width==400)
+let measures = superMarket.filter(a=>a.height==600 || a.width==400)
 
 
 let resultMeasures = [];
@@ -589,5 +589,3 @@ document.write("</h2>")
 document.write("<p>")
 document.write(resultMeasures.join(",").replaceAll(",",""))
 document.write("</p>")
-
-
